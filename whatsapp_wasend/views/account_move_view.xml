@@ -1,0 +1,18 @@
+<odoo>
+    <record id="view_invoice_form_whatsapp" model="ir.ui.view">
+        <field name="name">view.invoice.form.whatsapp</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//header" position="inside">
+              <button name="action_open_whatsapp_wizard"
+                    type="object"
+                    string="WhatsApp"
+
+                    icon="fa-whatsapp"/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
